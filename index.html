@@ -17,18 +17,25 @@
     <div class="container">
       <div class="wrapper">
         <div class="weather-app">
-          <h1>Graz</h1>
-          <ul>
-            <li>Sunday 10:00</li>
-            <li>Cloudy</li>
-          </ul>
+          <div class="overview">
+            <h1>Graz</h1>
+            <ul>
+              <li>Sunday 10:00</li>
+              <li>Cloudy</li>
+            </ul>
+          </div>
           <div class="row">
             <div class="col-6">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="Cloudy"
-              />
-              6°C | °F
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="Cloudy"
+                />
+                <div class="float-left">
+                  <strong>6</strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
             </div>
             <div class="col-6">
               <ul>
