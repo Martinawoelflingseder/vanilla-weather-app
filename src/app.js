@@ -54,13 +54,20 @@ function displayForecast(response) {
                 <div class="weather-forecast-temperature">
                   <span class="weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max
-                  )}°</span>
+                  )}°C</span>
                   <span class="weather-forecast-temperature-min"> ${Math.round(
                     forecastDay.temp.min
-                  )}°</span>
+                  )}°C </span>
                 </div>
-              </div>
+                <div class="weather-forecast-humidity"> ${
+                  forecastDay.humidity
+                }% </div>
+              <div class="weather-forecast-wind"> ${Math.round(
+                forecastDay.wind_speed
+              )} km/h </div>
+                
            
+              </div>
             `;
     }
   });
@@ -116,4 +123,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("New York");
+search("Graz");

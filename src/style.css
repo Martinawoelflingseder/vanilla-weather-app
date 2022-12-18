@@ -48,24 +48,15 @@ li:first-letter {
   line-height: 1;
   color: #696969;
 }
-
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -24px;
   text-decoration: none;
 }
-.weather-temperature .active {
-  color: #696969;
-  cursor: default;
-  text-decoration: none;
-}
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
 
 .weather-forecast {
-  margin: 20px;
+  margin: 10px;
   text-align: center;
 }
 .weather-forecast-date {
@@ -79,4 +70,14 @@ li:first-letter {
 
 .weather-forecast-temperature-max {
   color: black;
+}
+
+.weather-forecast-humidity {
+  font-size: 13px;
+  color: #696969;
+}
+
+.weather-forecast-wind {
+  font-size: 13px;
+  color: #696969;
 }
